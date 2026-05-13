@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="520" viewBox="0 0 1120 520" role="img" aria-labelledby="title desc">
+  <title id="title">Reliability remediation and backup verification flow</title>
+  <desc id="desc">A public-safe architecture diagram showing services, restore validation, Git sanitation, encrypted bundles, and restore-tested offsite backup.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#2f3a4a"/>
+    </marker>
+    <style>
+      .bg { fill: #f7f8fa; }
+      .box { fill: #ffffff; stroke: #2f3a4a; stroke-width: 2; rx: 8; }
+      .box-alt { fill: #eef6f3; stroke: #226b5f; stroke-width: 2; rx: 8; }
+      .box-warn { fill: #fff6e8; stroke: #a05a00; stroke-width: 2; rx: 8; }
+      .text { fill: #17202a; font-family: Arial, sans-serif; font-size: 18px; font-weight: 700; }
+      .small { fill: #394657; font-family: Arial, sans-serif; font-size: 14px; }
+      .line { stroke: #2f3a4a; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+      .label { fill: #5a6573; font-family: Arial, sans-serif; font-size: 13px; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1120" height="520"/>
+
+  <rect class="box" x="40" y="70" width="190" height="80"/>
+  <text class="text" x="70" y="105">Operational</text>
+  <text class="text" x="78" y="128">Services</text>
+
+  <rect class="box-alt" x="300" y="70" width="210" height="80"/>
+  <text class="text" x="332" y="105">Restore</text>
+  <text class="text" x="328" y="128">Validation</text>
+
+  <rect class="box-alt" x="580" y="70" width="220" height="80"/>
+  <text class="text" x="620" y="105">Pass/Fail</text>
+  <text class="text" x="628" y="128">Evidence</text>
+
+  <rect class="box" x="40" y="260" width="190" height="80"/>
+  <text class="text" x="74" y="295">Local Git</text>
+  <text class="text" x="92" y="318">Repos</text>
+
+  <rect class="box-warn" x="300" y="230" width="210" height="80"/>
+  <text class="text" x="335" y="265">Tracked Tree</text>
+  <text class="text" x="370" y="288">Scan</text>
+
+  <rect class="box-warn" x="300" y="340" width="210" height="80"/>
+  <text class="text" x="342" y="375">Full History</text>
+  <text class="text" x="370" y="398">Scan</text>
+
+  <rect class="box-alt" x="580" y="285" width="220" height="80"/>
+  <text class="text" x="612" y="320">Sanitized</text>
+  <text class="text" x="618" y="343">Baseline</text>
+
+  <rect class="box" x="870" y="220" width="210" height="80"/>
+  <text class="text" x="918" y="255">Private</text>
+  <text class="text" x="906" y="278">Git Backup</text>
+
+  <rect class="box" x="870" y="340" width="210" height="80"/>
+  <text class="text" x="906" y="375">Encrypted</text>
+  <text class="text" x="918" y="398">Bundles</text>
+
+  <rect class="box-alt" x="870" y="70" width="210" height="80"/>
+  <text class="text" x="910" y="105">Operator</text>
+  <text class="text" x="908" y="128">Confidence</text>
+
+  <path class="line" d="M230 110 H300"/>
+  <path class="line" d="M510 110 H580"/>
+  <path class="line" d="M800 110 H870"/>
+  <path class="line" d="M230 300 H300"/>
+  <path class="line" d="M230 300 C260 300 260 380 300 380"/>
+  <path class="line" d="M510 270 C545 270 545 325 580 325"/>
+  <path class="line" d="M510 380 C545 380 545 325 580 325"/>
+  <path class="line" d="M800 325 C835 325 835 260 870 260"/>
+  <path class="line" d="M800 325 C835 325 835 380 870 380"/>
+  <path class="line" d="M975 340 V150"/>
+
+  <text class="label" x="254" y="96">health signal</text>
+  <text class="label" x="522" y="96">explicit result</text>
+  <text class="label" x="820" y="242">source path</text>
+  <text class="label" x="820" y="398">recovery path</text>
+</svg>

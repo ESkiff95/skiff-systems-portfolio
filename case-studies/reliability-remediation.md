@@ -50,6 +50,8 @@ I treated the cleanup as a reliability problem, not just a Git problem.
 ## Architecture
 
 See [Reliability Remediation Flow](../diagrams/reliability-remediation-flow.md).
+There is also a rendered SVG version:
+[Reliability Remediation Flow SVG](../diagrams/reliability-remediation-flow.svg).
 
 The important design choice was to verify the artifact that would actually be
 used during recovery. A backup file that has never been restored is only a

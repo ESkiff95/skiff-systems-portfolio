@@ -19,16 +19,27 @@ and practical automation.
 ## Case Studies
 
 - [Reliability Remediation And Repo Sanitization](case-studies/reliability-remediation.md)
+- [Backup Manifest Checker](case-studies/backup-manifest-checker.md)
 
 ## Diagrams
 
 - [Reliability Remediation Flow](diagrams/reliability-remediation-flow.md)
+- [Reliability Remediation Flow SVG](diagrams/reliability-remediation-flow.svg)
 
 ## Artifacts
 
 - [Backup Manifest Check](artifacts/backup_manifest_check.py): a small Python
   CLI that validates backup freshness, optional SHA-256 digests, and gzip
   readability from a JSON manifest.
+
+Run it with:
+
+```sh
+python3 artifacts/backup_manifest_check.py artifacts/backup-manifest.example.json --pretty
+```
+
+The example manifest uses placeholder paths. Point it at a real local backup
+file when testing.
 
 ## Safety Model
 
