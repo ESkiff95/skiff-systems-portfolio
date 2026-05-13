@@ -1,0 +1,16 @@
+{
+  "backups": [
+    {
+      "name": "nightly-database-dump",
+      "path": "/path/to/backup.sql.gz",
+      "max_age_hours": 48,
+      "gzip": true,
+      "sha256": ""
+    },
+    {
+      "name": "application-config-archive",
+      "path": "/path/to/config-backup.tar",
+      "max_age_hours": 168
+    }
+  ]
+}
