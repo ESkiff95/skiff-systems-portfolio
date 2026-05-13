@@ -20,6 +20,10 @@ and practical automation.
 
 - [Reliability Remediation And Repo Sanitization](case-studies/reliability-remediation.md)
 
+## Diagrams
+
+- [Reliability Remediation Flow](diagrams/reliability-remediation-flow.md)
+
 ## Artifacts
 
 - [Backup Manifest Check](artifacts/backup_manifest_check.py): a small Python
